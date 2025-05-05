@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = 'http://localhost:3000/posts'
+const API_URL = 'https://blog-post-api-d6lo.onrender.com/posts'
 
 export function getAllPosts() {
   return axios.get(API_URL)
