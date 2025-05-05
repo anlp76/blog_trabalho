@@ -1,0 +1,136 @@
+body {
+  background-color: #f5f5f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.container {
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 800px;
+  width: 90%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+input,
+textarea,
+button,
+#file-upload-button {
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+  outline: none;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+button {
+  background-color: #4f46e5;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+}
+
+button:hover {
+  background-color: #4338ca;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.card-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.card-actions button {
+  width: 100%;
+  max-width: 120px;
+}
+
+.view {
+  background-color: white;
+  color: #4caf50;
+  border: 1px solid #4caf50;
+}
+
+.view:hover {
+  background-color: #4caf50;
+  color: white;
+  border-color: #388e3c;
+}
+
+.edit {
+  background-color: white;
+  color: #ffa500;
+  border: 1px solid #ffa500;
+}
+
+.edit:hover {
+  background-color: #ffa500;
+  color: white;
+  border-color: #ff9800;
+}
+
+.remove {
+  background-color: white;
+  color: #f44336;
+  border: 1px solid #f44336;
+}
+
+.remove:hover {
+  background-color: #f44336;
+  color: white;
+  border-color: #d32f2f;
+}
